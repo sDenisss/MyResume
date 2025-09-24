@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме студента</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="Assets/umnyj-chelovek-v-ochkah.jpg" alt="Фото" class="profile-img">
+            <div class="header-info">
+                <h1 class="name">Савин Денис</h1>
+                <p class="title">Программист-Инженер</p>
+                <p>Мотивированный студент, ищущий возможность применить полученные знания на практике. Готов обучаться и развиваться</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (921) 565-82-74</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>savin.denis.06@mail.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Санкт-Петербург</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/sDenisss" class="contact-link">github.com/sDenisss</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="left-column">
+                <section class="section">
+                    <h2 class="section-title">О себе</h2>
+                    <p class="about-text">
+                        Студент 3 курса факультета программной инженерии и компьютерной техники. Обладаю неплохими знаниями в области программирования и веб-разработки.
+                        Ищу стажировку или начальную позицию, где смогу применить свои навыки и научиться новому у опытных профессионалов.
+                    </p>
+                </section>
+                
+                <section class="section">
+                    <h2 class="section-title">Образование</h2>
+                    <div class="education-item">
+                        <div class="education-year">2023 - настоящее время</div>
+                        <div class="education-degree">Компьютерные технологии в дизайне: программная инженерия</div>
+                        <div class="education-institution">Национальный исследовательский университет ИТМО</div>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2 class="section-title">Проекты</h2>
+                    
+                    <div class="project-item">
+                        <div class="project-title">LinkUp — Real-Time Chat App (Backend + Frontend)</div>
+                        <div class="project-description">
+                            <p>Веб-приложение для обмена сообщениями в реальном времени с регистрацией пользователей и созданием чатов.</p>
+                            <p><strong>Функционал:</strong> JWT-аутентификация, чаты по уникальным именам, реальное время через SignalR, REST API для управления чатами.</p>
+                            <p><strong>Технологии:</strong> ASP.NET Core Web API, Entity Framework Core (PostgreSQL), MediatR (CQRS), SignalR, JWT, HTML/CSS/JavaScript.</p>
+                            <p><strong>Особенности:</strong> Чистая архитектура, безопасность, современная структура проекта.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Educational Quiz Telegram Bot</div>
+                        <div class="project-description">
+                            <p>Telegram бот для образовательных викторин</p>
+                            <p><strong>Функционал:</strong> Регистрация пользователей через Telegram, викторины с выбором ответов, админ-панель для управления контентом.</p>
+                            <p><strong>Технологии:</strong> C#, .NET, PostgreSQL, Telegram Bot API.</p>
+                            <p><strong>Особенности:</strong> Гибкая система добавления вопросов и квизов через БД, модульная архитектура.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Tourist Guide Labs (4 учебных проекта)</div>
+                        <div class="project-description">
+                            <p>Серия мини-проектов туристического гида с различными технологическими стеками:</p>
+                            <ul>
+                                <li><strong>Консольное приложение</strong> - работа с коллекциями в памяти, поиск и планирование маршрутов, unit-тесты</li>
+                                <li><strong>Консольное приложение с БД</strong> - Entity Framework Core + SQLite, хранение истории и достопримечательностей</li>
+                                <li><strong>Веб-приложение</strong> - ASP.NET Core Web API + SQLite + статический фронтенд (HTML/CSS)</li>
+                                <li><strong>WPF приложение</strong> - десктопный интерфейс с локальной логикой</li>
+                            </ul>
+                            <p><strong>Технологии:</strong> C#, ASP.NET Core, Entity Framework Core, SQLite, WPF, xUnit.</p>
+                            <p><strong>Особенности:</strong> Демонстрация различных подходов к разработке одного приложения.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="right-column">
+                <section class="section">
+                    <h2 class="section-title">Навыки</h2>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>HTML/CSS/JavaScript</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>C# / .NET</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>ASP.NET Core</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>SQL / PostgreSQL</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>Entity Framework Core</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>Git / GitHub</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>Docker</span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name">
+                                <span>WPF</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                                
+                <section class="section">
+                    <h2 class="section-title">Языки</h2>
+                    <div class="language-item">
+                        <span>Русский</span>
+                        <span>Родной</span>
+                    </div>
+                    <div class="language-item">
+                        <span>Английский</span>
+                        <span>B1 (Intermediate)</span>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2 class="section-title">Интересы</h2>
+                    <div class="hobbies">
+                        <span class="hobby">Программирование</span>
+                        <span class="hobby">Настольные игры</span>
+                        <span class="hobby">Технологии</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

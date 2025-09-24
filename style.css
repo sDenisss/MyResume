@@ -1,0 +1,225 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка резюме */
+.header {
+    display: flex;
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-right: 30px;
+}
+
+.header-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.contact-item i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Основной контент */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.left-column, .right-column {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    color: #4b6cb7;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+/* О себе */
+.about-text {
+    text-align: justify;
+}
+
+/* Образование */
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-year {
+    font-weight: bold;
+    color: #4b6cb7;
+}
+
+.education-degree {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.education-institution {
+    color: #666;
+}
+
+/* Навыки */
+.skills-list {
+    list-style: none;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+/* Проекты */
+.project-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Достижения */
+.achievement-item {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.achievement-item:before {
+    content: "•";
+    color: #4b6cb7;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Языки */
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Хобби */
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hobby {
+    background: #f0f4ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-img {
+        margin: 0 auto 20px;
+    }
+    
+    .content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+}
