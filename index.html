@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме студента</title>
+    <title>Резюме</title>
     <link rel="stylesheet" href="style.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,12 +14,15 @@
             <img src="Assets/umnyj-chelovek-v-ochkah.jpg" alt="Фото" class="profile-img">
             <div class="header-info">
                 <h1 class="name">Савин Денис</h1>
-                <p class="title">Программист-Инженер</p>
-                <p>Мотивированный студент, ищущий возможность применить полученные знания на практике. Готов обучаться и развиваться</p>
+                <p class="title">Backend-разработчик на C# .NET</p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+7 (921) 565-82-74</span>
+                        <i class="fab fa-telegram"></i>
+                        <a href="https://t.me/sDenissss" class="contact-link">Telegram</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/sDenisss" class="contact-link">Github</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -30,8 +33,8 @@
                         <span>г. Санкт-Петербург</span>
                     </div>
                     <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/sDenisss" class="contact-link">github.com/sDenisss</a>
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (921) 565-82-74</span>
                     </div>
                 </div>
             </div>
@@ -42,15 +45,21 @@
                 <section class="section">
                     <h2 class="section-title">О себе</h2>
                     <p class="about-text">
-                        Студент 3 курса факультета программной инженерии и компьютерной техники. Обладаю неплохими знаниями в области программирования и веб-разработки.
-                        Ищу стажировку или начальную позицию, где смогу применить свои навыки и научиться новому у опытных профессионалов.
+                        Студент 3 курса ИТМО по направлению "Программная инженерия". 
+                        Специализируюсь на backend-разработке на C# .NET. Имею практический 
+                        опыт создания Web API, RESTful сервисов, работы с базами данных и реализации real-time 
+                        функциональности. В работе следую принципам SOLID, KISS, DRY и активно 
+                        изучаю современные подходы к разработке (Clean Architecture, CQRS).
+                        Ищу стажировку для применения навыков в коммерческих проектах.
+                        Мотивированный студент, ищущий возможность применить полученные 
+                        знания на практике. Готов обучаться и развиваться
                     </p>
                 </section>
                 
                 <section class="section">
                     <h2 class="section-title">Образование</h2>
                     <div class="education-item">
-                        <div class="education-year">2023 - настоящее время</div>
+                        <div class="education-year">2023 - 2027</div>
                         <div class="education-degree">Компьютерные технологии в дизайне: программная инженерия</div>
                         <div class="education-institution">Национальный исследовательский университет ИТМО</div>
                     </div>
@@ -66,6 +75,10 @@
                             <p><strong>Функционал:</strong> JWT-аутентификация, чаты по уникальным именам, реальное время через SignalR, REST API для управления чатами.</p>
                             <p><strong>Технологии:</strong> ASP.NET Core Web API, Entity Framework Core (PostgreSQL), MediatR (CQRS), SignalR, JWT, HTML/CSS/JavaScript.</p>
                             <p><strong>Особенности:</strong> Чистая архитектура, безопасность, современная структура проекта.</p>
+                            <div class="project-github-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/sDenisss/LinkUp" class="contact-link">Github</a>
+                            </div>
                         </div>
                     </div>
                     
@@ -76,6 +89,10 @@
                             <p><strong>Функционал:</strong> Регистрация пользователей через Telegram, викторины с выбором ответов, админ-панель для управления контентом.</p>
                             <p><strong>Технологии:</strong> C#, .NET, PostgreSQL, Telegram Bot API.</p>
                             <p><strong>Особенности:</strong> Гибкая система добавления вопросов и квизов через БД, модульная архитектура.</p>
+                            <div class="project-github-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/sDenisss/EducationalQuizBot" class="contact-link">Github</a>
+                            </div>
                         </div>
                     </div>
                     
@@ -91,6 +108,10 @@
                             </ul>
                             <p><strong>Технологии:</strong> C#, ASP.NET Core, Entity Framework Core, SQLite, WPF, xUnit.</p>
                             <p><strong>Особенности:</strong> Демонстрация различных подходов к разработке одного приложения.</p>
+                            <div class="project-github-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/sDenisss/Tourist-Guide-2024" class="contact-link">Github</a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -99,50 +120,36 @@
             <div class="right-column">
                 <section class="section">
                     <h2 class="section-title">Навыки</h2>
-                    <ul class="skills-list">
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>HTML/CSS/JavaScript</span>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>C# / .NET</span>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>ASP.NET Core</span>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>SQL / PostgreSQL</span>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Entity Framework Core</span>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Git / GitHub</span>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Docker</span>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>WPF</span>
-                            </div>
-                        </li>
-                    </ul>
+                    
+                    <div class="skill-category">
+                        <h4>Backend Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C# / .NET</span>
+                            <span class="skill-tag">ASP.NET Core</span>
+                            <span class="skill-tag">Web API</span>
+                            <span class="skill-tag">Entity Framework Core</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Tools & Infrastructure</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git / GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">WPF</span>
+                        </div>
+                    </div>
                 </section>
-                                
+                                                
                 <section class="section">
                     <h2 class="section-title">Языки</h2>
                     <div class="language-item">

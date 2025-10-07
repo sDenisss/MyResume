@@ -12,6 +12,10 @@ body {
     line-height: 1.6;
 }
 
+/* br {
+    height: 20px;
+} */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -53,6 +57,31 @@ body {
     opacity: 0.9;
 }
 
+/* .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+} */
+
+/* .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.contact-item i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+} */
+
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -74,12 +103,41 @@ body {
 .contact-link {
     color: inherit;
     text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: #e0e7ff; /* Светлый оттенок при наведении */
+}
+
+
+.project-github-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.project-github-item a {
+    color: #4b6cb7;
+    text-decoration: none;
+}
+
+.project-github-item a:hover {
+    text-decoration: underline;
+}
+
+/* .contact-link {
+    color: inherit;
+    text-decoration: none;
 }
 
 .contact-link:hover {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 /* Основной контент */
 .content {
@@ -146,6 +204,30 @@ body {
     margin-bottom: 5px;
 }
 
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h4 {
+    color: #4b6cb7;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: #f0f4ff;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    color: #4b6cb7;
+}
+
 
 /* Проекты */
 .project-item {
@@ -159,7 +241,7 @@ body {
 }
 
 .project-title {
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 5px;
 }
 
