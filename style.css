@@ -12,10 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* br {
-    height: 20px;
-} */
-
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -57,31 +53,6 @@ body {
     opacity: 0.9;
 }
 
-/* .subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    opacity: 0.9;
-} */
-
-/* .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 0.95rem;
-}
-
-.contact-item i {
-    margin-right: 8px;
-    font-size: 1.1rem;
-} */
-
-
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -108,36 +79,8 @@ body {
 
 .contact-link:hover {
     text-decoration: underline;
-    color: #e0e7ff; /* Светлый оттенок при наведении */
+    color: #e0e7ff;
 }
-
-
-.project-github-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
-.project-github-item a {
-    color: #4b6cb7;
-    text-decoration: none;
-}
-
-.project-github-item a:hover {
-    text-decoration: underline;
-}
-
-/* .contact-link {
-    color: inherit;
-    text-decoration: none;
-}
-
-.contact-link:hover {
-    text-decoration: none;
-    color: inherit;
-} */
 
 /* Основной контент */
 .content {
@@ -190,44 +133,31 @@ body {
 }
 
 /* Навыки */
-.skills-list {
-    list-style: none;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
 }
 
-.skill-item {
-    margin-bottom: 15px;
-}
-
-.skill-name {
+.skill-with-icon {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: #f8f9ff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.skill-category {
-    margin-bottom: 20px;
+.skill-with-icon:hover {
+    background: #eef2ff;
 }
 
-.skill-category h4 {
+.skill-with-icon i {
     color: #4b6cb7;
-    margin-bottom: 8px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    width: 20px;
 }
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.skill-tag {
-    background: #f0f4ff;
-    padding: 4px 12px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    color: #4b6cb7;
-}
-
 
 /* Проекты */
 .project-item {
@@ -250,19 +180,21 @@ body {
     font-size: 0.95rem;
 }
 
-/* Достижения */
-.achievement-item {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
+.project-github-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 
-.achievement-item:before {
-    content: "•";
+.project-github-item a {
     color: #4b6cb7;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
+    text-decoration: none;
+}
+
+.project-github-item a:hover {
+    text-decoration: underline;
 }
 
 /* Языки */
